@@ -34,6 +34,6 @@ resource "google_compute_firewall" "allow_vpn_port" {
 
   allow {
     protocol = "udp"
-    ports    = [ var.vpn_server_port ]
+    ports    = [var.vpn_server_port]
   }
 }
