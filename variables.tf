@@ -34,3 +34,8 @@ variable "network_name" {
 variable "subnetwork_name" {
   description = "Name of the subnetwork that will be created"
 }
+
+variable "timezone" {
+  description = "Timezone for the Wireguard server"
+  default     = "America/New_York"
+}

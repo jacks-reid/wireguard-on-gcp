@@ -15,7 +15,7 @@ module "gce-container" {
       },
       {
         name  = "TZ"
-        value = "America/New_York"
+        value = var.timezone
       },
       {
         name  = "SERVERPORT"
