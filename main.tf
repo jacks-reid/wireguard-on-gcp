@@ -18,6 +18,10 @@ module "gce-container" {
         value = var.timezone
       },
       {
+        name  = "SERVERURL"
+        value = var.vpn_server_url
+      },
+      {
         name  = "SERVERPORT"
         value = var.vpn_server_port
       },
@@ -27,7 +31,7 @@ module "gce-container" {
       },
       {
         name  = "PEERDNS"
-        value = "auto"
+        value = var.peer_dns
       },
       {
         name  = "INTERNAL_SUBNET"

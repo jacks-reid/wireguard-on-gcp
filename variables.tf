@@ -15,8 +15,12 @@ variable "zone" {
   description = "GCP zone to deploy into"
 }
 
+variable "vpn_server_url" {
+  description = "Server URL for Wireguard"
+}
+
 variable "vpn_server_port" {
-  description = "Server port for Wiregard (often 51820)"
+  description = "Server port for Wireguard (often 51820)"
 }
 
 variable "vpn_num_peers" {
@@ -38,4 +42,9 @@ variable "subnetwork_name" {
 variable "timezone" {
   description = "Timezone for the Wireguard server"
   default     = "America/New_York"
+}
+
+variable "peer_dns" {
+  description = "DNS setting for connected peers"
+  default     = "auto"
 }
